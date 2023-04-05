@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script
+      src="https://kit.fontawesome.com/3162f5d9b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/output.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP CIMA</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <span class="loader"></span>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <img src="images/5f827d3dbc0776d241eaea5ca492a4bd.png" alt="logo" />
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <section>
+          <div class="user-box">
+            <input type="text" type="text" class="query" required />
+            <label>Enter Movie Or Series Name</label>
+          </div>
+          <div class="type">
+            <p>Movies</p>
+            <input id="type" type="checkbox" class="switch_2" />
+            <p>Series</p>
+          </div>
+          <button class="search-button" type="button">Search</button>
+        </section>
+      </div>
+    </main>
+    <div class="search-result"></div>
+    <div class="modal hide">
+      <button class="exit"><i class="fa-solid fa-circle-xmark"></i></button>
+      <div class="player">
+        <iframe
+          name="watch"
+          src=""
+          id="IframeEmbed"
+          height="100%"
+          width="100%"
+          allowfullscreen=""
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div class="result"></div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
